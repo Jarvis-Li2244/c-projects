@@ -4,11 +4,11 @@
 #include <stdbool.h>
 #include <string.h>
 
-
 #define COOL_NUMBER 7
 
-int show_data_types(){
-  int x,z;
+int show_data_types()
+{
+  int x, z;
   x = 5;
   char name[20];
   strcpy(name, "Eric Chen");
@@ -17,11 +17,25 @@ int show_data_types(){
   return 0;
 }
 
-int main(){
+int main()
+{
   char name[16] = "Hello World";
   char *x = name;
   char *y = &name[2];
   char *z = &name[1];
   printf("X = %p, Y = %p, Z = %p \n", x, y, z);
   return 0;
+}
+
+void print_day(int day)
+{
+  switch (day)
+  {
+  case 1:
+    printf("Case 1");
+    break;
+  case 2:
+    printf("Case 2");
+    break;
+  }
 }
