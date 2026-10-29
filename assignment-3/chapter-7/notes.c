@@ -110,5 +110,18 @@ float f;
 double d;
 i = c;  c is converted to int
 f = i;  i is converted to float
-d = f;  £ is converted to double
+d = f; f is converted to double
+
+CAST EXPRESSION
+quotient = (float) dividend / divisor;
+
+TYPE DEFINITIONS
+typedef int Bool;
+typedef long int ptrdiff_t;
+typedef unsigned long int size_t;
+typedef int wchar_t;
+
+SIZEOF
+int i
+sizeof (i)
 */
