@@ -1,5 +1,6 @@
 #include <stdbool.h>
 #include <stdio.h>
+#include <stdlib.h>
 
 #define STACK_SIZE 100
 
@@ -25,11 +26,13 @@ bool is_full(void)
 void stack_overflow(void)
 {
   printf("Expression is too complex\n");
+  exit(EXIT_FAILURE);
 }
 
 void stack_underflow(void)
 {
   printf("Not enough operands in expression\n");
+  exit(EXIT_FAILURE);
 }
 
 void push(int i)
@@ -61,6 +64,7 @@ int main(void)
   for (;;)
   {
     make_empty();
+    quit = false;
     printf("Enter an RPN expression: ");
     while (quit == false)
     {

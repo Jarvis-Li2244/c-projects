@@ -38,3 +38,4 @@ int pop(void)
 }
 
 // time, rand, srand
+// exit terminates program
